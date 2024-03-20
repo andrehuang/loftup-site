@@ -152,9 +152,31 @@
   </div>
 </section> -->
 
+<section class="hero is-small">
+  <!-- <div class="hero-body"> -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+      <div class="container">
+      <div class="item">
+      <div class="column is-centered has-text-centered">
+        <img src="static/images/example.png" alt="RENOVATE examples"/>
+      
+      <h2 class="subtitle">
+        For each segment, our method RENOVATEs the original name (below the image) and generates a more precise name (in the text box).
+      </h2>
+	  </div>
+    </div>
+  </div>
+ <!--  </div> -->
+  </div>
+  </div>
+ <!--  </div> -->
+</section>
+
+
 <section class="section">
-  <img src="static/images/example.png" alt="">
-  
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -178,21 +200,38 @@
       </div>
     </div>
     <!--/ Abstract. -->
-
-    
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Method</h2>
-        <figure class="image is-4by3">
-          <img src="static/images/obtain-names.png" alt="Method">
-        </figure>
-      </div>
-    </div>
-  </div>
 </section>
 
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">How does it work?</h2>
+        <div class="content has-text-justified">
+        </div>
+		<div class="column is-centered has-text-centered">
+        <img src="static/images/obtain-names.png" alt="cars peace" width="700px"/>
+		</div>
+		<p class="content has-text-justified">
+            Given the image with the masks and their original names, we use the renaming
+            model to rank all the candidate names and obtain a renovated name for each segment.
+          </p>
+        <div class="column is-centered has-text-centered">
+        <img src="static/images/overview.png" alt="cars peace" width="700px"/>
+      </div>
+        <div class="content has-text-justified">
+          <p>
+            We generate candidate names based on the context names and train the renaming
+            model to match them with the segments. For illustration clarity, we show only one segment. In practice, multiple segments are jointly trained, pairing with the text queries.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section> 
 
 <!-- <section class="hero is-light is-small">
   <div class="hero-body">
