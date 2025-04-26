@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <meta property="og:title" content="Renovating Names in Open-Vocabulary Segmentation Benchmarks"/>
-  <meta property="og:url" content="https://andrehuang.github.io/renovate/"/>
-  <meta property="og:image" content="static/images/favicon.jpeg" />
+  <meta property="og:title" content="LoftUp: Learning a Coordinate-Based Feature Upsampler for  Vision Foundation Models"/>
+  <meta property="og:url" content="https://andrehuang.github.io/loftup/"/>
+  <meta property="og:image" content="static/images/up.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <title>Renovating Names in Open-Vocabulary Segmentation Benchmarks</title>
+  <title>LoftUp: Learning a Coordinate-Based Feature Upsampler for  Vision Foundation Models</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
-  <link rel="icon" href="static/images/favicon.jpeg">
+  <link rel="icon" href="static/images/up.png">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -59,35 +59,39 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Renovating Names in Open-Vocabulary Segmentation Benchmarks</h1>
-	<p style="font-size: 1.5em; color: gray; margin-top: -10px;">
+          <h1 class="title is-1 publication-title">LoftUp: Learning a Coordinate-Based Feature Upsampler for  Vision Foundation Models</h1>
+	<!-- <p style="font-size: 1.5em; color: gray; margin-top: -10px;">
       		NeurIPS 2024
-    		</p>
+    		</p> -->
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://andrehuang.github.io/">Haiwen Huang</a><sup>1,2</sup>,</span>
+              <a href="https://andrehuang.github.io/">Haiwen Huang</a>,</span>
             <span class="author-block">
-              <a href="https://pengsongyou.github.io/">Songyou Peng</a><sup>3,4</sup>,</span>
+              <a href="https://apchenstu.github.io/">Anpei Chen</a>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.de/citations?user=yazO-mMAAAAJ&hl=en">Dan Zhang</a><sup>1,5</sup>,
+              Volodymyr Havrylov,
             </span>
             <span class="author-block">
-              <a href="https://www.cvlibs.net/">Andreas Geiger</a><sup>1,2</sup>,
+              <a href="https://www.cvlibs.net/">Andreas Geiger</a>,
             </span>
+            <span class="author-block">
+              <a href="https://scholar.google.de/citations?user=yazO-mMAAAAJ&hl=en">Dan Zhang</a>,
+            </span>
+            
           </div>
 
-          <div class="is-size-5 publication-authors">
+          <!-- <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of Tübingen</span>
             <span class="author-block"><sup>2</sup>Tübingen AI Center</span>
             <span class="author-block"><sup>3</sup>ETH Zürich</span>
             <span class="author-block"><sup>4</sup>MPI for Intelligent Systems, Tübingen</span>
             <span class="author-block"><sup>5</sup>Bosch Center for Artificial Intelligence</span>
-          </div>
+          </div> -->
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://openreview.net/pdf?id=Uw2eJOI822"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -95,9 +99,9 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
+              </span> -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2403.09593"
+                <a href="https://arxiv.org/abs/2504.14032"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -116,24 +120,24 @@
                 </a>
               </span> -->
               <!-- Code Link. -->
-<!--               <span class="link-block">
-                <a href="https://drive.google.com/drive/folders/1_ST8Gv-fKDo2B3_Njv5ItYRe6rQcs8Rd?usp=sharing"
+              <span class="link-block">
+                <a href="https://github.com/andrehuang/loftup"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span> Code </span>
                   </a>
-              </span> -->
+              </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://drive.google.com/drive/folders/1_ST8Gv-fKDo2B3_Njv5ItYRe6rQcs8Rd?usp=sharing"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                  </a> -->
             </div>
 
           </div>
@@ -168,11 +172,21 @@
       <div class="container">
       <div class="item">
       <div class="column is-centered has-text-centered">
-        <img src="static/images/example.png" alt="RENOVATE examples"/>
-      
-      <h2 class="subtitle">
+        <!-- <img src="static/images/example.png" alt="RENOVATE examples"/> -->
+      <div class="columns is-centered">
+        <div class="column">
+          <img src="static/images/motor-jump.gif" alt="Example 1" style="max-width: 100%; height: auto;"/>
+        </div>
+        <div class="column">
+          <img src="static/images/clip-blackswan.gif" alt="Example 2" style="max-width: 100%; height: auto;"/>
+        </div>
+        <div class="column">
+          <img src="static/images/siglip2-horsejump.gif" alt="Example 3" style="max-width: 100%; height: auto;"/>
+        </div>
+      </div>
+      <!-- <h2 class="subtitle">
         For each segment, our method RENOVATEs the original name (below the image) and generates a more precise name (in the text box).
-      </h2>
+      </h2> -->
 	  </div>
     </div>
   </div>
@@ -191,17 +205,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Names are essential to both human cognition and vision-language models. 
-            Open-vocabulary models utilize class names as text prompts to generalize 
-            to categories unseen during training. 
-            However, name qualities are often overlooked and lack sufficient precision in existing datasets. 
-            In this paper, we address this underexplored problem by presenting a framework for ``renovating'' names in open-vocabulary segmentation benchmarks (RENOVATE). 
+            Vision foundation models (VFMs) such as DINOv2 and CLIP have achieved impressive results on various downstream tasks, but their limited feature resolution hampers performance in applications requiring pixel-level understanding. 
+            Feature upsampling offers a promising direction to address this challenge. 
+            </p>
           </p>
-          </p>
-            Through human study, we demonstrate that the names generated by our model are more precise descriptions of the visual segments and hence enhance the quality of existing datasets by means of simple renaming. 
-            We further demonstrate that using our renovated names enables training of stronger open-vocabulary segmentation models. 
-            Using open-vocabulary segmentation for name quality evaluation, we show that our renovated names lead to up to 16% relative improvement from the original names on various benchmarks across various state-of-the-art models. 
-            We provide our code and relabelings for several popular segmentation datasets (ADE20K, Cityscapes, PASCAL Context) to the research community.
+          In this work, we identify two critical factors for enhancing feature upsampling: the upsampler architecture and the training objective. 
+          For the upsampler architecture, we introduce a coordinate-based cross-attention transformer that integrates the high-resolution images with coordinates and low-resolution VFM features to generate sharp, high-quality features. For the training objective, we propose constructing high-resolution pseudo-groundtruth features by leveraging class-agnostic masks and self-distillation. Our approach effectively captures fine-grained details and adapts flexibly to various input and feature resolutions. Through experiments, we demonstrate that our approach significantly outperforms existing feature upsampling techniques across various downstream tasks.
           </p>
         </div>
       </div>
@@ -233,23 +242,9 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title has-text-centered">RENOVATE fixes typical problems of names in current benchmarks</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="column is-centered has-text-centered">
-          <!-- <div class="item item-fullbody1"> -->
-            <img src="static/images/fig1.png" alt="inaccurate" width="600px"/>
-          </div>
-          <!-- </div> -->
-        <div class="column is-centered has-text-centered">
-          <!-- <div class="item item-fullbody2"> -->
-            <img src="static/images/fig1_2.png" alt="too general" width="600px"/>
-          </div>
-          <!-- </div> -->
-          <div class="column is-centered has-text-centered">
-            <!-- <div class="item item-fullbody3"> -->
-              <img src="static/images/fig1_3.png " alt="lack context" width="600px"/>
-            </div>
-        <!-- </div> -->
+      <h2 class="title has-text-centered">LoftUp significantly enhances VFM performance on various downstream tasks</h2>
+      <div class="column is-centered has-text-centered">
+        <img src="static/images/performance.png" alt="performance" width="600px"/>
       </div>
       <p class="content has-text-centered"><b>Left</b>: Ground-truth. <b>Middle</b>: Segmentation (Original name). <b>Right</b>: Segmentation (Renovated name).</p>
     </div>
@@ -263,23 +258,6 @@
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">RENOVATE upgrades existing benchmarks</h2>
-        <div class="content has-text-justified">
-        </div>
-		<div class="column is-centered has-text-centered">
-        <img src="static/images/upgrade-benchmark.png" alt="upgrade benchmarks" width="1000px"/>
-		</div>
-		<p class="content has-text-justified">
-            RENOVATE on ADE20K results in 578 classes, allowing us to conduct more fine-grained analysis on open-vocabulary model abilities and biases.
-          </p>
-    <!--/ Abstract. -->
-  </div>
-</section> 
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -289,20 +267,21 @@
         <h2 class="title is-3">How does it work?</h2>
         <div class="content has-text-justified">
         </div>
-		<div class="column is-centered has-text-centered">
-        <img src="static/images/obtain-names.png" alt="cars peace" width="700px"/>
-		</div>
 		<p class="content has-text-justified">
-            Given the image with the masks and their original names, we use the trained renaming
-            model to rank all the candidate names and obtain a renovated name for each segment.
-          </p>
+            We identified two key factors to the success of feature upsampling: <b>upsampler architecture</b> and <b>training objective</b>.
+        </p>
+		<div class="column is-centered has-text-centered">
+        <img src="static/images/loftup-arch.png" alt="cars peace" width="700px"/>
+		</div>
+    <p class="content has-text-justified">
+      For the upsampler architecture, we introduce a coordinate-based cross-attention transformer that integrates the high-resolution images with coordinates and low-resolution VFM features to generate sharp, high-quality features.
+  </p>
         <div class="column is-centered has-text-centered">
-        <img src="static/images/overview.png" alt="cars peace"/>
+        <img src="static/images/loftup-loss.png" alt="cars peace"/>
       </div>
         <div class="content has-text-justified">
           <p>
-            To train our renaming model, we first generate candidate names based on the context names (upper block) and train the renaming
-            model to match them with the segments (lower block). For illustration clarity, we show only one segment. In practice, multiple segments are jointly trained, pairing with the text queries.
+          For the training objective, we propose constructing high-resolution pseudo-groundtruth features by leveraging class-agnostic masks and self-distillation.
           </p>
         </div>
       </div>
@@ -343,23 +322,22 @@
 <section  class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title has-text-centered">More RENOVATE examples</h2>
+      <h2 class="title has-text-centered">Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="column is-centered has-text-centered">
-          <img src="static/images/example-1.png" width="800px" class="is-centered"/>
+          <img src="static/images/loftup-feat.png" width="800px" class="is-centered"/>
           </div>
           <div class="column is-centered has-text-centered">
-          <img src="static/images/example-2.png" width="800px" class="is-centered"/>
+          <img src="static/images/loftup-depth-estimation.png" width="800px" class="is-centered"/>
           </div>
           <div class="column is-centered has-text-centered">
-          <img src="static/images/example-3.png" width="800px" class="is-centered"/>
+          <img src="static/images/loftup-semseg.png" width="800px" class="is-centered"/>
           </div>
-        <div class="column is-centered has-text-centered">
-          <img src="static/images/example-4.png" width="800px" class="is-centered"/>
-          </div>
-          <div class="column is-centered has-text-centered">
-            <img src="static/images/example-5.png" width="800px" class="is-centered"/>
-            </div>
+  <div class="column is-centered has-text-centered">
+    <p class="has-text-centered"><strong>Left</strong>: Feature Visualization. <strong>Middle</strong>: Depth Estimation (downstream). <strong>Right</strong>: Semantic Segmentation (downstream).</p>
+  </div>
+
+
   </div>
 </div>
 </div>
@@ -428,12 +406,14 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{huang2024renovating,
-      title={Renovating Names in Open-Vocabulary Segmentation Benchmarks}, 
-      author={Haiwen Huang and Songyou Peng and Dan Zhang and Andreas Geiger},
-      booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
-      year={2024},
-      url={https://openreview.net/forum?id=Uw2eJOI822}
+    <pre><code>@misc{huang2025loftuplearningcoordinatebasedfeature,
+      title={LoftUp: Learning a Coordinate-Based Feature Upsampler for Vision Foundation Models}, 
+      author={Haiwen Huang and Anpei Chen and Volodymyr Havrylov and Andreas Geiger and Dan Zhang},
+      year={2025},
+      eprint={2504.14032},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.14032}, 
 }</code></pre>
   </div>
 </section>
