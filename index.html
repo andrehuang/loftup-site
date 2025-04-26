@@ -67,15 +67,15 @@
             <span class="author-block">
               <a href="https://andrehuang.github.io/">Haiwen Huang</a>,</span>
             <span class="author-block">
-              <a href="https://apchenstu.github.io/">Anpei Chen</a>,</span>
+              Anpei Chen,</span>
             <span class="author-block">
               Volodymyr Havrylov,
             </span>
             <span class="author-block">
-              <a href="https://www.cvlibs.net/">Andreas Geiger</a>,
+              Andreas Geiger,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.de/citations?user=yazO-mMAAAAJ&hl=en">Dan Zhang</a>,
+              Dan Zhang
             </span>
             
           </div>
@@ -274,14 +274,14 @@
         <img src="static/images/loftup-arch.png" alt="cars peace" width="700px"/>
 		</div>
     <p class="content has-text-justified">
-      For the upsampler architecture, we introduce a coordinate-based cross-attention transformer that integrates the high-resolution images with coordinates and low-resolution VFM features to generate sharp, high-quality features.
+      For the <b>upsampler architecture</b>, we introduce a coordinate-based cross-attention transformer that integrates the high-resolution images with coordinates and low-resolution VFM features to generate sharp, high-quality features.
   </p>
         <div class="column is-centered has-text-centered">
         <img src="static/images/loftup-loss.png" alt="cars peace"/>
       </div>
         <div class="content has-text-justified">
           <p>
-          For the training objective, we propose constructing high-resolution pseudo-groundtruth features by leveraging class-agnostic masks and self-distillation.
+          For the <b>training objective</b>, we propose constructing high-resolution pseudo-groundtruth features by leveraging class-agnostic masks and self-distillation.
           </p>
         </div>
       </div>
@@ -319,23 +319,30 @@
 </section> -->
 
 
-<section  class="hero is-small">
+<section class="hero is-small">
+  <div class="container">
+    <p class="has-text-centered"><strong>Left</strong>: Feature Visualization. <strong>Middle</strong>: Depth Estimation (downstream). <strong>Right</strong>: Semantic Segmentation (downstream).</p>
+  </div>
+  
   <div class="hero-body">
     <div class="container">
       <h2 class="title has-text-centered">Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="column is-centered has-text-centered">
-          <img src="static/images/loftup-feat.png" width="800px" class="is-centered"/>
-          </div>
-          <div class="column is-centered has-text-centered">
-          <img src="static/images/loftup-depth-estimation.png" width="800px" class="is-centered"/>
-          </div>
-          <div class="column is-centered has-text-centered">
-          <img src="static/images/loftup-semseg.png" width="800px" class="is-centered"/>
-          </div>
-  <div class="column is-centered has-text-centered">
-    <p class="has-text-centered"><strong>Left</strong>: Feature Visualization. <strong>Middle</strong>: Depth Estimation (downstream). <strong>Right</strong>: Semantic Segmentation (downstream).</p>
+          <img src="static/images/loftup-feat.png" width="800px" class="is-centered" alt="Feature visualization"/>
+        </div>
+        <div class="column is-centered has-text-centered">
+          <img src="static/images/loftup-depth-estimation.png" width="800px" class="is-centered" alt="Depth estimation"/>
+        </div>
+        <div class="column is-centered has-text-centered">
+          <img src="static/images/loftup-semseg.png" width="800px" class="is-centered" alt="Semantic segmentation"/>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
+
+<section class="hero is-light is-small">
 
 
   </div>
